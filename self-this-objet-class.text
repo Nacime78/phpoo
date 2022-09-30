@@ -1,0 +1,22 @@
+Quand utiliser self:: , $this , $objet et Class:: ?
+
+avant tout je me pose les bonnes questions pour savoir quoi utiliser :
+
+est ce que je suis dans la class ?
+            -Oui ($this ou self)
+                -Est ce que l'elelment auqel je veux accéder est static ?
+                    -Oui
+                        - self::$element
+                    -Non 
+                        - $this->element   
+            -Non ($objet ou Class)
+                -Est ce que l'elelment auqel je veux accéder est static ?
+                    -Oui 
+                        - Class::$element
+                    -Non
+                        - $objet->element
+
+/*
+element : signifie une propriété ou une méthode qui se trouve dans la class
+$objet : l'objet de la class que j'utilise
+*/
